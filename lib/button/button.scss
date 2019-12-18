@@ -1,0 +1,98 @@
+.ireact-button {
+  + .ireact-button {
+    margin-left: 12px;
+  }
+  color: #575757;
+  background: #f7f7fa;
+  cursor: pointer;
+  outline: 0!important;
+  white-space: nowrap;
+  border: 1px solid #f7f7fa;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 10px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 6px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  .ireact-icon {
+    width: 1.4em;
+    height: 1.4em;
+    fill: #fff;
+    margin-right: 4px;
+  }
+  &:hover {
+    color: #575757;
+    background-color: #e5e5ea;
+    border-color: #e5e5ea;
+  }
+  &-primary {
+    background: #34c3ff;
+    color: #fff;
+    border: 1px solid #34c3ff;
+    &:hover {
+      background-color: #2eabdf;
+      border-color: #2eabdf;
+      color: #fff;
+    }
+  }
+  &-info {
+    color: #34c3ff;
+    background-color: transparent;
+    transition: color .2s linear,background-color .3s linear;
+    border: 1px solid #34c3ff;
+    .ireact-icon {
+      fill: #34c3ff;
+    }
+    &:hover {
+      color: #2eabdf;
+      border-color: #2eabdf;
+      background-color: transparent;
+    }
+  }
+  &-success {
+    background: #4caf50;
+    color: #fff;
+    border: 1px solid #4caf50;
+    &:hover {
+      background-color: #4caf50;
+      color: #fff;
+    }
+  }
+  &-warning {
+    background: #ff9800;
+    color: #fff;
+    border-color: #ff9800;
+    &:hover {
+      background: #ff9800;
+      color: #fff;
+    }
+  }
+  &-danger {
+    background: #f44336;
+    color: #fff;
+    border-color: #f44336;
+    &:hover {
+      background: #f44336;
+      color: #fff;
+    }
+  }
+  &-medium {
+    padding: 8px 10px;
+  }
+  &-small {
+    padding: 6px 10px;
+  }
+  &-mini {
+    padding: 4px 8px;
+    .ireact-icon {
+      width: .8em;
+      height: .8em;
+    }
+  }
+}

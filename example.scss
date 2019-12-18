@@ -1,0 +1,150 @@
+* {margin: 0;padding: 0; box-sizing: border-box;}
+*::before {box-sizing: border-box;}
+*::after {box-sizing: border-box;}
+ul, ol {list-style: none;}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 8px;
+  color: rgba(0, 0, 0, 0.85);
+}
+a { text-decoration: none; color: inherit; }
+pre {
+  font-family: "Fira Code Medium", Consolas, monospace;
+}
+$padding: 16px;
+$main-color: #34c3ff;
+$border-color: #eee;
+$font-one: #999;
+body {
+  font-size: 16px;
+}
+section {
+  padding: 20px;
+  padding-bottom: 0;
+  padding-left: 25px;
+  margin: 0 auto;
+  &.sub {
+    padding-top: 0;
+  }
+}
+.site-page {
+  background: #ffffff;
+  min-height: 100vh;
+}
+.site-main {
+  padding: 20px 40px 40px;
+  h1 {
+    font-size: 30px;
+    line-height: 38px;
+    color: #0d1a26;
+    font-weight: 500;
+  }
+  p.intro {
+    padding-left: 12px;
+    border-left: 2px solid #ddd;
+    font-size: 14px;
+    color: #999;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 26px;
+    color: #0d1a26;
+  }
+  .text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+}
+.site-header {
+  padding: 12px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  .logo {
+    padding: 0 $padding;
+    display: flex;
+    align-items: center;
+    > img {margin-right: 8px;}
+    > span {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 28px;
+      color: rgba(0, 0, 0, 0.65);
+    }
+  }
+}
+.site-aside {
+  width: 275px;
+  flex-shrink: 0;
+  margin-top: 40px;
+  position: relative;
+  padding-bottom: 200px;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);;
+  h2 {
+    padding: $padding;
+    font-size: 18px;
+    color: $font-one;
+  }
+  ul {
+    min-width: 16em;
+    padding-left: 1em;
+    > li {
+      margin-top: 6px;
+      a {
+        color: rgba(0, 0, 0, 0.65);
+        display: block;
+        padding: 8px 12px;
+        font-size: 14px;
+        &:hover {
+          background-color: #e6f7ff;
+          color: $main-color;
+        }
+        &.active {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
+.site-footer {
+  text-align: center;
+  font-size: 12px;
+  background-color: #34383b;
+  color: #fff;
+  padding: 16px 0;
+}
+.api-table {
+  border-collapse: collapse;
+  line-height: 1.8em;
+  width: 100%;
+  margin: 0 auto 20px;
+  tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  }
+  th {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  th, td {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.65);
+    text-align: center;
+    padding: 15px 10px;
+    min-width: 120px;
+    max-width: 200px;
+    &.des, &.type {
+      text-align: start;
+      min-width: 100px;
+      max-width: 300px;
+    }
+  }
+  td.type {
+    color: #c41d7f;
+  }
+}
